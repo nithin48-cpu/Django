@@ -1,0 +1,27 @@
+--->This cmds to create an automated environment for creating the website with backend of django
+
+->django-admin createproject login
+
+->python manage.py runserver
+
+->python manage.py migrate  - create the db.sqlite database file
+
+->python manage.py createapp app
+
+->python manage.py createsuperuser
+
+
+
+
+{% extends 'index.html' %}
+{% block content %}
+{% endblock %}
+
+{% crsf_token %}
+{{ foam.as_p }}
+
+
+
+NOTE: if templates are present in the apps no need to write in *settings.py
+
+      write if templates are like siblings to project,app write templates in *settings.py
